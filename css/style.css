@@ -248,6 +248,26 @@ section h2 {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (width < 755px) {
+  .details-top {
+    display: block;
+  }
+
+  .details-top img {
+    margin-right: 0px;
+    object-fit: cover;
+  }
+
+  .img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0; 
+    
+  }
+
+}
+
 /* Search */
 .search {
   padding: 60px;
@@ -316,6 +336,16 @@ section h2 {
 .search .container form button:hover {
   background: transparent;
   color: #fff;
+}
+
+@media screen and (width < 500px) {
+  .search {
+    padding: 60px 0 60px;
+  }
+
+  .search .container {
+    min-width: 100%;
+  }
 }
 
 .pagination {
